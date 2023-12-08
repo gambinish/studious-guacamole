@@ -20,11 +20,6 @@ jobs:
           name: Build Go application
           command: go build -o myapp
 
-      - persist_to_workspace:
-          root: /workspace
-          paths:
-            - myapp
-
   test:
     docker:
       - image: golang:latest
