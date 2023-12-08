@@ -9,6 +9,10 @@ jobs:
       - checkout
 
       - run:
+          name: Initialize Go module
+          command: go mod init studious-guacamole
+
+      - run:
           name: Set up Go module
           command: go mod download
 
