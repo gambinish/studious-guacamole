@@ -9,8 +9,8 @@ jobs:
       - checkout
 
       - run:
-          name: Install dependencies
-          command: go get -v -t -d ./...
+          name: Set up Go module
+          command: go mod download
 
       - run:
           name: Build Go application
